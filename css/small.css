@@ -34,6 +34,12 @@ footer {
     font-family: 'Acme', sans-serif;
     padding: 2px;
     border-radius: 10px;
+    
+    
 }
 
-a:visited {color: white}
+footer a {
+    color: white;
+}
+
+
