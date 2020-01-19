@@ -1,49 +1,10 @@
-header {
-    background-color: navy;
-    line-height: 1em;
-    color: white;
-    text-align: center;
-    font-family: 'Acme', sans-serif;
-    padding: 3px;
-    margin: 0 auto;
-    max-width: 1050px;
+@media only screen and (max-width: 64em) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 64em;
+        
     }
-
-
-
-main {
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-column-gap: 20px;
-    background-color: rgb(184, 230, 226);
-    padding: 20px;
-    font-family: 'Playfair Display', serif;
-    margin: 0 auto;
-    max-width: 1000px;
-    
+    header, footer {
+        max-width: 64em;
+    }
 }
-
-section {
-    background-color: rgb(132, 222, 238);
-    padding: 20px; 
-      
-}
-
-img {
-    max-width: 250px;
-    
-}
-
-footer {
-    background-color:navy;
-    color: white;
-    text-align: center;
-    font-family: 'Acme', sans-serif;
-    padding: 2px;
-    margin: 0 auto;
-    max-width: 1050px;
-
-    
-}
-
-a:visited {color: white }

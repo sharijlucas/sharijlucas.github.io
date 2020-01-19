@@ -1,0 +1,10 @@
+@media only screen and (max-width: 32.5em) {
+    main {
+        grid-template-columns: 1fr 1fr;
+        max-width: 32.5em;
+        
+    }
+    header, footer {
+        max-width: 32.5;
+    }
+}
