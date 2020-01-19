@@ -1,10 +1,11 @@
-@media only screen and (max-width: 64em) {
+@media only screen and (min-width: 64em) {
     main {
-        grid-template-columns: 1fr 1fr 1fr;
-        max-width: 64em;
-        
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 800px;
     }
+
     header, footer {
-        max-width: 64em;
+        max-width: 1500px;
     }
 }
