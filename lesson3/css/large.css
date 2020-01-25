@@ -5,6 +5,10 @@
     max-width: 800px;
     }
 
+    img {
+       float: left;
+    }
+
     header, footer {
         max-width: 1500px;
     }
