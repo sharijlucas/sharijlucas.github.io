@@ -1,12 +1,18 @@
 @media only screen and (min-width: 64em) {
     main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     max-width: 800px;
     }
 
     img {
        float: left;
+    }
+
+    nav li  {
+        display: block;
+        width: 1500px;
+      
     }
 
     header, footer {
