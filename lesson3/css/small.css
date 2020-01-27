@@ -21,10 +21,12 @@ footer {
 }
 
 nav a:hover {
-    background-color: blue;
+    background-color: rgb(92, 201, 92);
+    color: white;
 }
 
 ul {
+
     background-color: #ffff66;
     list-style-type: none;
     margin: 0;
@@ -33,18 +35,11 @@ ul {
     font-family: 'Acme', sans-serif;
 }
 
-li {
-    float: left;
-}
-
-nav a:visited: {
-    color: black;
-}
 
 nav li a {
     display: block;
     color: black;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     font-size: 24px;
     padding: 10px;
@@ -54,14 +49,43 @@ main {
     padding: 10px;
     font-family: 'Playfair Display', serif;
     max-width: 400px;
+    font-size: 1.5em;
+    margin: 10px;
 }
 
+table, th, td {
+    border: 1px solid black;
+  }
 
-img {
+header img {
     max-width: 150px;
     border-radius: 20px;
 }
 
+img {
+    max-width: 500px;
+}
+
+.font1 {
+    font-family: 'Playfair Display', serif;
+
+}
+
+.font2 {
+    font-family: 'Acme', sans-serif;
+}
+h2 { 
+    font-weight: bold;
+    background-color: rgb(92, 201, 92);
+    color: white;
+    font-size: 36px;
+}
+section {
+    background-color: rgb(132, 222, 238);
+    max-width: 300px;
+    text-indent: 20px;
+        
+}
 
 footer a:visited {
     color: white
