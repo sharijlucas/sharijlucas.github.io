@@ -1,17 +1,21 @@
 header,
 footer {
-    background-color: rgb(92, 201, 92);
+    background-color: #0E0E88;
     color: white;
     font-family: 'Acme', sans-serif;
-    padding: 3px;
+    padding: 1px;
     margin: 0 auto;
-    max-width: 400px;
+    }
+
+header img {
+    max-width: 150px;
+
 }
 
 header {
     line-height: 2em;
-    font-size: 36px;
-    text-align: left;
+    font-size: 24px;
+    text-align: center;
 }
 
 footer {
@@ -21,15 +25,15 @@ footer {
 }
 
 nav a:hover {
-    background-color: rgb(92, 201, 92);
+    background-color: #0e0e88;
     color: white;
 }
 
 ul {
 
-    background-color: #ffff66;
+    background-color: #fbfb64;
     list-style-type: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     overflow: hidden;
     font-family: 'Acme', sans-serif;
@@ -43,48 +47,55 @@ nav li a {
     text-decoration: none;
     font-size: 24px;
     padding: 10px;
+    text-align: center;
 }
 
 main {
-    padding: 10px;
     font-family: 'Playfair Display', serif;
-    max-width: 400px;
     font-size: 1.5em;
-    margin: 10px;
-}
-
-table, th, td {
-    border: 1px solid black;
-  }
-
-header img {
-    max-width: 150px;
-    border-radius: 20px;
-}
-
-img {
-    max-width: 500px;
+    margin: 0 auto;
 }
 
 .font1 {
     font-family: 'Playfair Display', serif;
-
 }
 
 .font2 {
     font-family: 'Acme', sans-serif;
 }
-h2 { 
+
+h2 {
     font-weight: bold;
-    background-color: rgb(92, 201, 92);
+    background-color: #fc888f;
     color: white;
     font-size: 36px;
+    text-align: center;
+    padding: 10px;
 }
+
 section {
-    background-color: rgb(132, 222, 238);
-    max-width: 300px;
-    text-indent: 20px;
-        
+    background-color: #f2f2f8;
+    margin: 20px;
+}
+
+section p {
+    padding: 10px;
+    margin: 10px;
+    font-size: 18px;
+}
+
+p {
+    padding: 5px;
+    font-size: 20px;
+}
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+img {
+    max-width: 500px;
 }
 
 footer a:visited {
