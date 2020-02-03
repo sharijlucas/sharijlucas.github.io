@@ -1,0 +1,17 @@
+@media only screen and (min-width: 32.5em) {
+  
+    
+    
+    ul {
+        display: flex;  
+        }
+
+    h1 {
+        display: float;
+        padding: 10px;
+    }
+    h6 {
+        display: float;
+        float: left;
+    }
+}
