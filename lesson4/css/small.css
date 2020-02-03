@@ -7,16 +7,36 @@ footer, .heading {
     margin: 0 auto;
     }
 
-header img {
-    max-width: 150px;
-}
-
-header {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-}
+    header {
+        padding: 5px 0;
+        display: flex;
+        align-items:center;
+        justify-content:center;
+    }
+    
+    header img {
+        width: 80px;
+        height: auto;
+    }
+    
+    .headings {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .headings h1 {
+        font-size: 1.6rem;
+        margin: 0 0 0 17px;
+    }
+    
+    .m {
+        font-style: italic;
+        letter-spacing: 1pt;
+        color: white;
+        margin-left: 20px;
+        font-size: .9rem;
+    }
+    
 
 footer {
     line-height: 1.5em;
@@ -24,30 +44,40 @@ footer {
 
 }
 
-nav a:hover {
-    background-color: #0e0e88;
+footer a {
     color: white;
 }
-
-ul {
-
+nav {
+	margin: 0 auto;
     background-color: #fbfb64;
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 0;
-    overflow: hidden;
     font-family: 'Acme', sans-serif;
 }
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	color: black;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+}
 
+.navigation a:hover {
+    background-color: #0e0e88;
+    color: white;
+	font-weight: 700;
+}
 
-nav li a {
-    display: block;
-    color: black;
-    text-align: left;
-    text-decoration: none;
-    font-size: 24px;
-    padding: 10px;
-    text-align: center;
+.responsive li {
+	display: block;
 }
 
 main {
@@ -68,42 +98,9 @@ h2 {
     font-weight: bold;
     background-color: #fc888f;
     color: white;
-    font-size: 36px;
+    font-size: 24px;
     text-align: center;
-    padding: 10px;
+    padding: 0.5em;
+    
 }
 
-section {
-    background-color: #f2f2f8;
-    margin: 20px;
-}
-
-section p {
-    padding: 10px;
-    margin: 10px;
-    font-size: 18px;
-}
-
-p {
-    padding: 5px;
-    font-size: 20px;
-}
-table,
-th,
-td {
-    border: 1px solid black;
-}
-
-img {
-    max-width: 500px;
-}
-
-footer a:visited {
-    color: white
-}
-
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
