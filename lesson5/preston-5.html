@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Sky Sunsations Weather</title>
     <meta name="description" content="weather website" />
-    <title>Sky Sunsations Website</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -15,10 +15,14 @@
 </head>
 
 <body>
+    
     <header>
+        <section class="displayMsg">
+            <script src="js/messages.js"></script>
+        </section>  
         <picture>
-        <img src="images/weatherLogo.png" alt="Logo">
-    </picture>
+            <img src="images/weatherLogo.png" alt="Logo">
+        </picture>
         <section class="headings">
             <h1>Sky Sunsations Weather</h1>
             <div class="m">It's going to be a SUNsational Day!</div>
@@ -28,7 +32,7 @@
         <ul class="navigation">
             <li><a class="ham" href="#">&#9776; Menu</a></li>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Preston</a></li>
+            <li><a href="#" class="active">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Center</a></li>
@@ -36,24 +40,91 @@
         </ul>
     </nav>
     <main>
-        <section>
-            <h2>Hero w/ weather summary</h2>
+        
+        <h2>Preston Idaho</h2>
+        <section class="sec1">
+            <img src="images/PrestonImage.jpg" alt="Hero Image Preston">
         </section>
-        <section>
+        <section class="stats">
+            <h3>Weather Summary</h3>
+            <p>Currently: <span id="currently">Sunny</span></p>
+            <p>High: <span id="high">76 °F</span></p>
+            <p>Wind Chill: <span id="windChill">°F</span></p>
+            <p>Humidity: <span id="humidity">69%</span></p>
+            <p>Wind Speed: <span id="windSpeed">5 mph</span></p>
+        </section>
+        <section class="sec2">
             <h2>5 Day Forecast</h2>
+            <div class="flex">
+                <div class="col">
+                    <span class="label">Monday</span>
+                    <img src="images/forecastSunny.png" alt="Sunny">
+                    <span class="data">81°</span>
+                </div>
+                <div class="col">
+                    <span class="label">Tuesday</span>
+                    <img src="images/forecastSunny.png" alt="Sunny">
+                    <span class="data">76°</span>
+                </div>
+                <div class="col">
+                    <span class="label">Wednesday</span>
+                    <img src="images/forecastSunny.png" alt="Sunny">
+                    <span class="data">79°</span>
+                </div>
+                <div class="col">
+                    <span class="label">Thursday</span>
+                    <img src="images/forecastSunny.png" alt="Sunny">
+                    <span class="data">77°</span>
+                </div>
+                <div class="col">
+                    <span class="label">Friday</span>
+                    <img src="images/forecastSunny.png" alt="Sunny">
+                    <span class="data">79°</span>
+                </div>
+
+            </div>
         </section>
-        <section>
-            <h2>Article</h2>
+        <section class="sec3">
+            <div class="article">
+                <img src="images/parkGathering.jpg" alt="FoundersDay">
+            <h3>Founders Day Fresco</h3>
+            <h4>by Janica Juarez</h4>
+            <p>
+                I recently reflected upon the founders day event held at Foundation Park each year. I have been taking
+                the festival for granted and have not been properly engaging in perhaps the most popular community event
+                of the year. In response, I contacted Ms. Sharon via email and expressed my desire to serve on the event
+                committee. Well, you guessed it, the phone rings almost immediately and she promptly asks me to be the
+                event committee chair. Literally, good grief! My appreciation for the years of dedicated, generous
+                service of volunteers and sponsors has escalated beyond what I thought I could feel for such a thing
+                and... <a href="#">continue to full article</a></p>
+            </div>
         </section>
-        <section>
-            <h2>Contact Information</h2>
+        <section class="sec4">
+            <div class="map">
+                <img src="images/map.jpg" alt="Map">
+                    </div>
+            <div class="contact">
+            
+            <h4>Sky Sunsations Weather</h4>
+            <p>&#xf3c5 30 N 1st E</p>
+            <p>Preston, ID 83263</p>
+            <br>
+            <p>&#9742 999.999.9999</p>
+            <p>&#9993 info@skysunsations.com</p>
+            <img src="images/facebook.png" alt="Facebook">
+            <img src="images/instagram.png" alt="Instagram">
+            <img src="images/twitter.png" alt="Twitter">
+            <img src="images/youtube.png" alt="YouTube">
+        </div>
+            
         </section>
+        <footer>
+            <p>&copy;Sky Sunsations Weather | Shari Lucas | <script src="js/currentdate.js"></script>
+        </footer>
     </main>
 
-    <footer>
-        <p>&copy;Sky Sunsations Weather | Shari Lucas | <script src="js/currentdate.js"></script>
-    </footer>
-    
+   
+
     <script src="js/scripts.js"></script>
 </body>
 
