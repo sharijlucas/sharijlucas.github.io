@@ -1,105 +1,78 @@
 header,
-footer,
-.heading {
+footer, .heading {
     background-color: #0e0e88;
     color: white;
     font-family: 'Acme', sans-serif;
     padding: 5px;
     margin: 0 auto;
-}
+    }
 
-header {
-    padding: 5px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-header img {
-    width: 80px;
-    height: auto;
-}
-
-.headings {
-    display: flex;
-    flex-direction: column;
-}
-
-.headings h1 {
-    font-size: 1.6rem;
-    margin: 0 0 0 17px;
-}
-
-.m {
-    font-style: italic;
-    letter-spacing: 1pt;
-    color: white;
-    margin-left: 20px;
-    font-size: .9rem;
-}
-
-
-footer {
-    line-height: 2em;
-    text-align: center;
-
-}
-
-footer a {
-    color: white;
-}
+    header {
+        padding: 5px 0;
+        display: flex;
+        align-items:center;
+        justify-content:center;
+    }
+    
+    header img {
+        width: 80px;
+        height: auto;
+    }
+    
+    .headings {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .headings h1 {
+        font-size: 1.6rem;
+        margin: 0 0 0 17px;
+    }
+    
+    .m {
+        font-style: italic;
+        letter-spacing: 1pt;
+        color: white;
+        margin-left: 20px;
+        font-size: .9rem;
+    }
 
 nav {
-    margin: 0 auto;
+	margin: 0 auto;
     background-color: #fbfb64;
     font-family: 'Acme', sans-serif;
 }
-
 .navigation {
-    list-style: none;
-    padding: 0;
-
+	list-style: none;
+	padding: 0;
 }
-
 .navigation li:first-child {
-    display: block;
+	display: block;
 }
-
 .navigation li {
-    display: none;
+	display: none;
 }
-
-.active {
-    background-color: #f2f2f8;
-}
-
-.forecast {
-    display: none;
-}
-
 .navigation a {
-    display: block;
-    color: black;
-    padding: 0.75rem;
-    text-align: left;
-    text-decoration: none;
-    margin: 0 auto;
+	display: block;
+	color: black;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
 }
 
 .navigation a:hover {
     background-color: #0e0e88;
     color: white;
-    font-weight: 700;
+	font-weight: 700;
 }
 
 .responsive li {
-    display: block;
+	display: block;
 }
 
 main {
     font-family: 'Playfair Display', serif;
     margin: 0 auto;
-   
 }
 
 .font1 {
@@ -111,25 +84,60 @@ main {
 }
 
 h2 {
+    font-weight: bold;
+    font-size: 24px;
     text-align: center;
+    padding: 0.5em;
+}
+
+.hero img {
+    max-width: 600px;
+}
+
+.stats {
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    background: radial-gradient(#eee, #f2f2f8);
+    border: 1px solid #000;
+    padding: 1rem;
+    box-shadow: 0 0 30px #111;
+    opacity: .8;
+    line-height: .2rem;
+    box-shadow: 0 0 20px #111;
+}
+
+
+.forecast {
+    display: none;
+}
+
+.article {
+    background: radial-gradient(#eee, #f2f2f8);
+    border: 1px solid #000;
+    padding: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.article img {
+    max-width: 50%;
+    box-shadow: 0 0 30px #111;
+    border: 1px solid #000;
+    margin: 15px;
+}
+
+.sec4 {
+    display: block;
+    background: radial-gradient(#eee, #f2f2f8);
+    border: 1px solid #000;
     padding: 10px;
 }
 
-h3 {
-    font-weight: bold;
+.map img {
+    display: none;
 }
 
-.sec1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-h1,
-h2,
-p {
-    margin: 0;
-}
 
 .sec2,
 .sec3,
@@ -137,47 +145,11 @@ p {
     padding: 20px;
 }
 
-.stats {
-    position: absolute;
-    top: 250px;
-    left: 100px;
-    background: radial-gradient(#eee, #f2f2f8);
-    border: 1px solid #000;
-    padding: 1.5rem;
-    box-shadow: 0 0 30px #111;
-    opacity: .8;
-    line-height: 1.5rem;
-    box-shadow: 0 0 20px #111;
+footer {
+    line-height: 1.5em;
+    text-align: center;
 }
 
-
-.article {
-    background: radial-gradient(#eee, #f2f2f8);
-    border: 1px solid #000;
-    padding: 1.5rem;
-    line-height: 1.5rem;
-
-}
-
-.article img {
-    max-width: 50%;
-    float: right;
-    box-shadow: 0 0 30px #111;
-    border: 1px solid #000;
-    margin: 15px;
-}
-
-
-.sec4 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background: radial-gradient(#eee, #f2f2f8);
-    border: 1px solid #000;
-    line-height: 1.5rem;
-}
-
-
-.map img {
-    max-width: 300px;
-  
+footer a {
+    color: white;
 }
