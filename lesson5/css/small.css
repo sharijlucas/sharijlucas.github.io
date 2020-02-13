@@ -73,7 +73,7 @@ nav {
     background-color: #f2f2f8;
 }
 
-.sec2 {
+.forecast {
     display: none;
 }
 
@@ -150,65 +150,6 @@ p {
     box-shadow: 0 0 20px #111;
 }
 
-.flex {
-    display: flex;
-    flex-direction: row;
-}
-
-.col {
-    flex: 1 1 100%;
-    border-top: 1px solid #333;
-    border-bottom: 1px solid #333;
-    border-left: 1px solid #333;
-    background-color: #f2f2f8;
-    font-size: 13px;
-    text-align: center;
-}
-
-.flex div:last-child {
-    border-right: 1px solid #333;
-}
-
-.label {
-    display: block;
-    padding: 5px;
-    font-weight: 700;
-    font-size: 18px;
-    border-bottom: 1px solid #333;
-    background-color: #fbfb64;
-}
-
-.flex div img,
-table img {
-    border-radius: 100px;
-    padding: 5px;
-}
-
-.data {
-    display: block;
-    padding: 0 5px 5px;
-    font-size: 2em;
-}
-
-table,
-th,
-td {
-    border: 1px solid #333;
-    border-collapse: collapse;
-    padding: 5px;
-}
-
-th {
-    font-weight: 700;
-    font-size: 15px;
-    background-color: #eee;
-}
-
-td {
-    background-color: #bed;
-    font-size: 13px;
-    text-align: center;
-}
 
 .article {
     background: radial-gradient(#eee, #f2f2f8);
@@ -237,5 +178,6 @@ td {
 
 
 .map img {
-    display: none;
+    max-width: 300px;
+  
 }

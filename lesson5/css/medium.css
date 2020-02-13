@@ -5,7 +5,7 @@
 		display: flex;
 	}
 	.navigation li {
-		display: block; /* needed because of state in small view */
+		display: block; 
 		flex: 1 1 100%;
 	}
 	.navigation li a {
@@ -18,12 +18,20 @@
 	}
 
 	main {
-		max-width: 800px;
+		max-width: 1000px;
 	}
 }
 
-.sec2 {
-  display: block;
+
+.forecast {
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+.flex {
+    display: flex;
+    flex-direction: row;
 }
 
 .col {
@@ -79,12 +87,4 @@ td {
     background-color: #bed;
     font-size: 13px;
     text-align: center;
-}
-
-.map img {
-	display: block;
-    max-width: 75%;
-    box-shadow: 0 0 30px #111;
-    border: 1px solid #000;
-    margin: 15px;
 }
