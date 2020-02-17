@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>Sky Sunsations Weather</title>
     <meta name="description" content="Sky Sunsations Weather for Preston Idaho" />
+    <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -42,16 +43,20 @@
     <main>
 
         <section class="hero">
-            <h2>Preston Idaho</h2>
-            <img src="images/PrestonImage.jpg" alt="Hero Image Preston">
+            <h2>Preston Idaho</h2>  
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/heroSmall.jpg">
+                <source media="(max-width: 800px)" srcset="images/heroMedium.jpg">
+                <img src="images/heroLarge.jpg" alt="hero image">
+            </picture>
         </section>
         <section class="stats">
             <h3>Weather Summary</h3>
             <p>Currently: <span id="currently">Sunny</span></p>
-            <p>High: <span id="high">76 °F</span></p>
-            <p>Wind Chill: <span id="windChill">°F</span></p>
-            <p>Humidity: <span id="humidity">69%</span></p>
-            <p>Wind Speed: <span id="windSpeed">5 mph</span></p>
+            <p>High: <span id="high">47</span>°F</p>
+            <p>Wind Chill: <span id="windChill"></span>°F</p>
+            <p>Humidity: <span id="humidity">69</span>%</p>
+            <p>Wind Speed: <span id="windSpeed">5</span> mph</p>
         </section>
 
 
@@ -135,6 +140,7 @@
     </footer>
 
     <script src="js/scripts.js"></script>
+    <script src="js/windchill.js"></script>
 </body>
 
 </html>

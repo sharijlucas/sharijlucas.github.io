@@ -73,7 +73,8 @@ nav {
 }
 
 .responsive li {
-	display: block;
+    display: block;
+    
 }
 
 main {
@@ -91,7 +92,7 @@ h2 {
 }
 
 .hero img {
-    max-width: 600px;
+    display: block;
     margin: 0 auto;
 }
 

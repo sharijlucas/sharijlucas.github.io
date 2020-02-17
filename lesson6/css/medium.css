@@ -17,9 +17,7 @@
 		display: none;
 	}
 
-	.hero img {
-		max-width: 1500px;
-	}
+	
 	.stats {
 		top: 275px;
 		line-height: 1rem;
