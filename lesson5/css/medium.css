@@ -40,6 +40,10 @@
 		display: flex;
 		flex-direction: row;
 	}
+
+	h3 {
+		text-align: center;
+	}
 	
 	.col {
 		flex: 1 1 100%;

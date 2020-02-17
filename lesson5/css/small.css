@@ -37,6 +37,12 @@ footer, .heading {
         font-size: .9rem;
     }
 
+    .displayMsg {
+        text-align: center;
+        font-weight: bold;
+        font-size: 2em;
+        
+    }
 nav {
 	margin: 0 auto;
     background-color: #fbfb64;
@@ -75,13 +81,7 @@ main {
     margin: 0 auto;
 }
 
-.font1 {
-    font-family: 'Playfair Display', serif;
-}
 
-.font2 {
-    font-family: 'Acme', sans-serif;
-}
 
 h2 {
     font-weight: bold;
@@ -92,6 +92,7 @@ h2 {
 
 .hero img {
     max-width: 600px;
+    margin: 0 auto;
 }
 
 .stats {
@@ -150,6 +151,3 @@ footer {
     text-align: center;
 }
 
-footer a {
-    color: white;
-}
