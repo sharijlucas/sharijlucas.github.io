@@ -3,6 +3,7 @@ footer, .heading {
     background-color: #0e0e88;
     color: white;
     font-family: 'Acme', sans-serif;
+    display: flex;
     padding: 5px;
     margin: 0 auto;
     }
@@ -80,10 +81,14 @@ nav {
 main {
     font-family: 'Playfair Display', serif;
     margin: 0 auto;
-    max-width: 100%;
+    max-width: 1200px;
 }
 
-
+.hero {
+    max-width: 100%;
+    margin: 0 auto;
+   
+}
 
 h2 {
     font-weight: bold;
@@ -92,10 +97,7 @@ h2 {
     padding: 0.5em;
 }
 
-.hero img {
-    display: block;
-    margin: 0 auto;
-}
+
 
 .stats {
     position: absolute;
