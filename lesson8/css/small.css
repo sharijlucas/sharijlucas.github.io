@@ -1,0 +1,125 @@
+header,
+footer, .heading {
+    background-color: #0e0e88;
+    color: white;
+    font-family: 'Acme', sans-serif;
+    display: flex;
+    padding: 5px;
+    margin: 0 auto;
+    }
+
+    header {
+        padding: 5px 0;
+        display: flex;
+        align-items:center;
+        justify-content:center;
+    }
+    
+    header img {
+        width: 80px;
+        height: auto;
+    }
+    
+    .headings {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .headings h1 {
+        font-size: 1.6rem;
+        margin: 0 0 0 17px;
+    }
+    
+    .m {
+        font-style: italic;
+        letter-spacing: 1pt;
+        color: white;
+        margin-left: 20px;
+        font-size: .9rem;
+    }
+
+    .displayMsg {
+        text-align: center;
+        font-weight: bold;
+        font-size: 2em;
+        
+    }
+nav {
+	margin: 0 auto;
+    background-color: #fbfb64;
+    font-family: 'Acme', sans-serif;
+}
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	color: black;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+}
+
+.navigation a:hover {
+    background-color: #0e0e88;
+    color: white;
+	font-weight: 700;
+}
+
+nav ul li.active a {
+    background-color: #0e0e88;
+    color: white;
+	font-weight: 700;
+}
+.responsive li {
+    display: block;
+    
+}
+
+main {
+    font-family: 'Playfair Display', serif;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    justify-items: center;
+    
+}
+
+figcaption {
+    background-color: #fc888f;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.gallery img {
+    border: 1px solid #333;
+    padding: 2px;
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
+.gallery img[data-src] {
+    filter: blur(0.5em)
+}
+
+footer {
+    line-height: 1.5em;
+    text-align: center;
+    justify-content: center;
+}
+
