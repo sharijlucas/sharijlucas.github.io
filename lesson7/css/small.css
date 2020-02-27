@@ -73,6 +73,11 @@ nav {
 	font-weight: 700;
 }
 
+nav ul li.active a {
+    background-color: #0e0e88;
+    color: white;
+	font-weight: 700;
+}
 .responsive li {
     display: block;
     

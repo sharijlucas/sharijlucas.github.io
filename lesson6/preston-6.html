@@ -27,13 +27,13 @@
         </section>
     </header>
     <div class="displayMsg">
-        <script src="js/messages.js"></script>
+        <span id="msg"></span>
     </div>
     <nav>
         <ul class="navigation">
             <li><a class="ham" href="#">&#9776; Menu</a></li>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Preston</a></li>
+            <li class="active"><a href="#">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Center</a></li>
@@ -133,11 +133,13 @@
     </main>
 
     <footer>
-        <p>&copy;Sky Sunsations Weather | Shari Lucas | <script src="js/currentdate.js"></script>
+        <p>&copy;Sky Sunsations Weather | Shari Lucas | <span id="date"></span>
     </footer>
 
     <script src="js/scripts.js"></script>
     <script src="js/windchill.js"></script>
+    <script src="js/messages.js"></script>
+    <script src="js/currentdate.js"></script>
 </body>
 
 </html>
