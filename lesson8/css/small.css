@@ -86,40 +86,82 @@ nav ul li.active a {
 main {
     font-family: 'Playfair Display', serif;
     margin: 0 auto;
-    max-width: 1200px;
-    text-align: center;
+    max-width: 500px;
+    padding: 0 2%;
+    min-height: 20rem;
 }
 
-
-.gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1em;
-    justify-items: center;
-    
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: .5rem 2%;
 }
 
-figcaption {
-    background-color: #fc888f;
+form legend {
+    color: #445ba9;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    color: #0e0e88;
+    font-size: .8rem;
+}
+
+form label.top input,
+form label.top select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #0e0e88;
     color: white;
-    padding: 5px;
-    border-radius: 5px;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
 }
 
-.gallery img {
-    border: 1px solid #333;
-    padding: 2px;
-    filter: blur(0em);
-    transition: filter 0.5s;
+form label.top input:required {
+    border-left: #0e0e88 solid 6px;
 }
 
-.gallery img[data-src] {
-    filter: blur(0.5em)
+form label.top input:required:valid {
+    border-left: #fbfb64 solid 6px;
 }
+
+.flexly {
+	display: flex;
+	align-items: center;
+}
+
+.ratingvalue {
+    font-size: 2rem;
+}
+
 
 footer {
     line-height: 1.5em;
     text-align: center;
     justify-content: center;
 }
-

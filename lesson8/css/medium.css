@@ -18,11 +18,11 @@
 	}
 
 	
-	.gallery {
-		grid-template-columns: 1fr 1fr;
-	}
 
-
+		img {
+			float: right;
+		}
+	
 	
 }
 
