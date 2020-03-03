@@ -43,7 +43,7 @@
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Customer Information</legend>
-                <label class="top">Full Name*<input type="text" name="fname" required></label>
+                <label class="top">Full Name*<input type="text" name="fname" required pattern="[a-zA-Z\ -] {5, }"></label>
                 <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com"
                         required></label>
                 <label class="top">Phone<input type="tel" name="phone" placeholder="123551234" required></label>
@@ -90,19 +90,20 @@
                             <option value="fishHaven">Fish Haven</option>
                         </select>
                     </label>
-
-                    <div>In-danger Level</div>
+                
+                 <div>In-danger Level</div>
                     <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
                     <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
                     <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>  
-
-    
-                </fieldset>   
-                <fieldset>
+             </fieldset>   
+               
+             <fieldset>
                     <legend>Additional Information or Comments</legend>
-                    <label class="top" for="comment">Comments
-                    <textarea class="top"  name="comment" rows="4" cols="40"> </textarea></label>
+                    <label class="top" for="comment">
+                    <textarea class="top"  name="comment" rows="12" cols="50"> </textarea></label>
                 </fieldset>
+
+                <input type="submit" value="Report This Storm" class="submitBtn">
         </form>
 
     </main>
