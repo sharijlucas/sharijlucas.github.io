@@ -104,16 +104,16 @@ form legend {
     padding: 0 .5rem;
 }
 
-form label.top,
-form div {
+.top,
+div {
     display: block;
     padding: 1rem;
     color: #0e0e88;
     font-size: .8rem;
 }
 
-form label.top input,
-form label.top select {
+.top input,
+.top select {
     display: block;
     font-size: 1rem;
     border: solid 1px #999;
@@ -125,13 +125,13 @@ form label.top select {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-form label.sbs {
+.sbs {
     display: block;
-    padding: .75rem 0;
+    padding: 0 0 .75rem .75rem;
     color: #555;
 }
 
-form input.submitBtn {
+.submitBtn {
     border: none;
     background-color: #0e0e88;
     color: white;
@@ -156,8 +156,10 @@ form label.top input:required:valid {
     
 }
 
-.ratingvalue {
-    font-size: 2rem;
+label span {
+    font-size: 1rem;
+    padding: .5rem
+    
 }
 
 
