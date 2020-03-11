@@ -1,172 +1,162 @@
 header,
-footer, .heading {
+footer,
+.heading {
     background-color: #0e0e88;
     color: white;
     font-family: 'Acme', sans-serif;
     display: flex;
     padding: 5px;
     margin: 0 auto;
-    }
+}
 
+header {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    header {
-        padding: 5px 0;
-        display: flex;
-        align-items:center;
-        justify-content:center;
-    }
-    
-    header img {
-        width: 80px;
-        height: auto;
-    }
-    
-    .headings {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .headings h1 {
-        font-size: 1.6rem;
-        margin: 0 0 0 17px;
-    }
-    
-    .m {
-        font-style: italic;
-        letter-spacing: 1pt;
-        color: white;
-        margin-left: 20px;
-        font-size: .9rem;
-    }
+header img {
+    width: 80px;
+    height: auto;
+}
 
-    .displayMsg {
-        text-align: center;
-        font-weight: bold;
-        font-size: 2em;
-        
-    }
+.headings {
+    display: flex;
+    flex-direction: column;
+}
+
+.headings h1 {
+    font-size: 1.6rem;
+    margin: 0 0 0 17px;
+}
+
+.m {
+    font-style: italic;
+    letter-spacing: 1pt;
+    color: white;
+    margin-left: 20px;
+    font-size: .9rem;
+}
+
+.displayMsg {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+
+}
+
 nav {
-	margin: 0 auto;
+    margin: 0 auto;
     background-color: #fbfb64;
     font-family: 'Acme', sans-serif;
 }
+
 .navigation {
-	list-style: none;
-	padding: 0;
+    list-style: none;
+    padding: 0;
 }
+
 .navigation li:first-child {
-	display: block;
+    display: block;
 }
+
 .navigation li {
-	display: none;
+    display: none;
 }
+
 .navigation a {
-	display: block;
-	color: black;
-	padding: 0.75rem;
-	text-align: left;
-	text-decoration: none;
+    display: block;
+    color: black;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
 }
 
 .navigation a:hover {
     background-color: #0e0e88;
     color: white;
-	font-weight: 700;
+    font-weight: 700;
 }
 
 nav ul li.active a {
     background-color: #0e0e88;
     color: white;
-	font-weight: 700;
+    font-weight: 700;
 }
+
 .responsive li {
     display: block;
-    
+
 }
 
 main {
     font-family: 'Playfair Display', serif;
     margin: 0 auto;
-    max-width: 500px;
-
-}
-
-form fieldset {
-    margin: 2rem 0;
-    border: 1px solid #445ba9;
-    border-radius: 10px;
-    padding: .5rem 2%;
-}
-
-form legend {
-    color: #445ba9;
-    margin: 0 1rem;
-    padding: 0 .5rem;
-}
-
-.top,
-div {
-    display: block;
+    max-width: 1200px;
     padding: 1rem;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    padding: 0.2em;
+}
+
+
+.article {
+    background: radial-gradient(#eee, #f2f2f8);
+    border: 1px solid #000;
+    padding: 1rem;
+    line-height: 1.5rem;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding: 1.5rem;
+}
+
+.cards h2 {
     color: #0e0e88;
-    font-size: .8rem;
+    margin-bottom: 0;
 }
 
-.top input,
-.top select {
-    display: block;
-    font-size: 1rem;
-    border: solid 1px #999;
-    border-radius: 4px;
-    padding: .75rem;
-    color: #555;
-    width: 100%;
-    max-width: 20rem;
-    background-color: rgba(0, 0, 0, 0.1);
+.cards h3 {
+    color: #0e0e88;
+    margin-top: 0;
+    font-size: .9rem;
+    font-style: italic;
 }
 
-.sbs {
-    display: block;
-    padding: 0 0 .75rem .75rem;
-    color: #555;
+
+.cards section {
+    text-align: center;
+    border: 1px solid grey;
+    background: radial-gradient(#eee, #f2f2f8);
 }
 
-.submitBtn {
-    border: none;
-    background-color: #0e0e88;
-    color: white;
-    border-radius: 1rem;
-    padding: .75rem 1.5rem;
-    margin: 0 0 2rem 2%;
-    width: 96%;
-    max-width: 20rem;
-}
-
-form label.top input:required {
-    border-left: #0e0e88 solid 6px;
-}
-
-form label.top input:required:valid {
-    border-left: #fbfb64 solid 6px;
-}
-
-.flexly {
-	display: flex;
-    align-items: center;
+.cards section img {
+    max-width: 100%;
+    margin-top: 1rem;
     
 }
 
-label span {
-    font-size: 1rem;
-    padding: .5rem
-    
+.contact {
+    display: block;
+    padding: 20px;
+    background: radial-gradient(#eee, #f2f2f8);
+    border: 1px solid #000;
 }
 
+.map img {
+    display: none;
+}
 
 footer {
     line-height: 1.5em;
-    text-align: center;
     justify-content: center;
 }
-
-

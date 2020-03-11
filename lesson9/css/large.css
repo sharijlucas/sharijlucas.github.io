@@ -1,11 +1,10 @@
 @media only screen and (min-width: 64em) {
 
-    .gallery {
-		grid-template-columns: 1fr 1fr 1fr;
-	}
-    
-    figure:hover {
-        box-shadow: 0 0 50px #333;
-    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+      }
+	
   
 }

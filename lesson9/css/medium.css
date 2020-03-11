@@ -1,28 +1,81 @@
 @media only screen and (min-width: 32.5em) {
-  
-    
+
+
 	.navigation {
 		display: flex;
 	}
+
 	.navigation li {
-		display: block; 
+		display: block;
 		flex: 1 1 100%;
 	}
+
 	.navigation li a {
 		color: black;
 		text-align: center;
 	}
-	
+
 	.navigation li:first-child {
 		display: none;
 	}
 
-	
+	h3 {
+		text-align: center;
+	}
 
-		img {
-			float: right;
-		}
-	
-	
+	.col {
+		flex: 1 1 100%;
+		border-top: 1px solid #333;
+		border-bottom: 1px solid #333;
+		border-left: 1px solid #333;
+		background-color: #f2f2f8;
+		font-size: 13px;
+		text-align: center;
+	}
+
+	.flex div:last-child {
+		border-right: 1px solid #333;
+	}
+
+	.article {
+		font-size: 1rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.cards section {
+		max-width: 600px;
+		margin: .5rem auto;
+		border: 1px solid #bbb;
+		background-color: #eee;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.cards {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.cards:nth-child(odd) {
+		flex-direction: row-reverse;
+	}
+
+	.contact {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		max-width: 1200px;
+		background: radial-gradient(#eee, #f2f2f8);
+		border: 1px solid #000;
+		margin: 0 auto;
+	}
+
+	.map img {
+		display: flex;
+		flex-direction: row;
+		max-width: 75%;
+		padding: 1rem;
+		border: 1px solid #000;
+		margin: 0 auto;
+	}
 }
-
