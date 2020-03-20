@@ -14,7 +14,7 @@ fetch(apiURL)
     currentTemp.textContent = jsObject.weather[0].main;
     temp.textContent = jsObject.main.temp; 
     humidity.textContent = jsObject.main.humidity;
-    windSpeed.textContent = jsObject.wind[0].speed;
+    windSpeed.textContent = jsObject.wind.speed;
 
 
     const imagesrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`; // note the concatenation
