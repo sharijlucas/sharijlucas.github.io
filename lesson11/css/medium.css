@@ -1,26 +1,25 @@
 @media only screen and (min-width: 32.5em) {
-  
-    
+
+
 	.navigation {
 		display: flex;
 	}
+
 	.navigation li {
-		display: block; 
+		display: block;
 		flex: 1 1 100%;
 	}
+
 	.navigation li a {
 		color: black;
 		text-align: center;
 	}
-	
+
 	.navigation li:first-child {
 		display: none;
 	}
 
 	
-
-
-
 	.col img { 
 		max-width: 50px;
 	}
@@ -38,7 +37,7 @@
 	h3 {
 		text-align: center;
 	}
-	
+
 	.col {
 		flex: 1 1 100%;
 		border-top: 1px solid #333;
@@ -48,11 +47,27 @@
 		font-size: 13px;
 		text-align: center;
 	}
-	
+
 	.flex div:last-child {
 		border-right: 1px solid #333;
 	}
-	
+
+	.article {
+		font-size: 1rem;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.cards {
+		display: flex;
+		flex-direction: row;
+		margin: 0;
+	}
+
+	.cards:nth-child(odd) {
+		flex-direction: row-reverse;
+	}
+
 	.label {
 		display: block;
 		padding: 5px;
@@ -71,7 +86,7 @@
 	.data {
 		display: block;
 		padding: 0 5px 5px;
-		font-size: 1.5em;
+		font-size: 2em;
 	}
 
 	.sec3 {
@@ -93,11 +108,27 @@
 		margin: 0 auto;
 	}
 	
+	.gallery {
+		grid-template-columns: 1fr 1fr;
+	}
+
+
+
+	.contact {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		max-width: 1200px;
+		background: radial-gradient(#eee, #f2f2f8);
+		border: 1px solid #000;
+		margin: 0 auto;
+	}
+
 	.map img {
-		display: block;
-		max-width: 75%;
+		display: flex;
+		flex-direction: row;
+		max-width: 50%;
+		padding: 1rem;
 		border: 1px solid #000;
 		margin: 0 auto;
 	}
 }
-
