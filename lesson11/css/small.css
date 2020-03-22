@@ -106,7 +106,7 @@ footer {
 main {
     font-family: 'Playfair Display', serif;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1000px;
 }
 
 
@@ -291,7 +291,7 @@ label span {
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1em;
+    grid-gap: .5em;
     justify-items: center;
     
 }

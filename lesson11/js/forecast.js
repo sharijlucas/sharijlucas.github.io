@@ -1,22 +1,24 @@
-const apiURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=50b16ae8477ff34ac4b8bd2d7a08dc0a';
+const apiURL5 = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=669794a2364d1c99a3fc675b67354b5c';
 
-fetch(apiURL)
-  .then((response) => response.json())
-  .then((jsObject) => {
-    console.log(jsObject);
-    
-  //  const weatherIcon = document.querySelector('#imagesrc');
-    
+fetch(apiURL5)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (jsObject) {
+        const fiveDays = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
+        for (let i = 0; i < fiveDays.length; i++) {
+            var d = new Date(fiveDays[i].dt_txt);
+            const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-    const fivedayforecast = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
-    console.log(fivedayforecast);
+            document.getElementById(`day${i+1}`).textContent = weekday[d.getDay()];
 
-    for (let i=0; i<fivedayforecast.length; i++) {
-        document.getElementById(`forecast${i+1}`).textContent = fivedayforecast[i].main.temp;
-        
-      }
+            document.getElementById(`temp${i+1}`).textContent = fiveDays[i].main.temp + "°F";
 
-  
-  });
+            const imagesrc = 'https://openweathermap.org/img/w/' + fiveDays[i].weather[0].icon + '.png';
+            const desc = fiveDays[i].weather[0].description;
+            document.getElementById(`icon${i+1}`).setAttribute('src', imagesrc);
+            document.getElementById(`icon${i+1}`).setAttribute('alt', desc);
+        }
 
+    });
   
