@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Salmon River Adventures</title>
+    <meta name="description" content="Salmon River Adventures website" />
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <picture>
+            <img src="images/logo.png" alt="Logo">
+        </picture>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="activities.html">Adventures</a></li>
+            <li><a href="guides.html">Our Guides</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li class="active"><a href="reservations.html">Reservations</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Reserve Your Adventure</h2>
+
+        <table>
+            <thead>
+              <th colspan="3">Adventures</th>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Adventure</th>
+                <th>Skill Level</th>
+                <th>Cost</th>
+              </tr>
+              <tr>
+                <td>Main Fork</td>
+                <td>Beginner</td>
+                <td>$1990</td>
+              </tr>
+              <tr>
+                <td>Middle Fork</td>
+                <td>Intermediate</td>
+                <td>$1495</td>
+              </tr>
+              <tr>
+                <td>Lower Fork</td>
+                <td>Advanced</td>
+                <td>$995</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3">Compiled 4.1.2020 by sLucas</td>
+              </tr>
+            </tfoot>
+          </table>
+
+          <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label class="top">Full Name*<input type="text" name="fname" required
+                        pattern="[a-zA-Z\ -] {5, }"></label>
+                <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com"
+                        required></label>
+                <label class="top">Phone<input type="tel" name="phone" placeholder="123551234" required></label>
+                <label class="top">Zip Code<input type="number" name="zip" placeholder="12345" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Adventure Registration</legend>
+                <label class="top">Start Date <input type="date" name="completeDate"></label>
+                
+                <div>Choose Your Adventure</div>
+                <label class="sbs"><input type="radio" name="choice" value="Main Fork"> Main Fork</label>
+                <label class="sbs"><input type="radio" name="choice" value="Midde Fork"> Midde Fork</label>
+                <label class="sbs"><input type="radio" name="choice" value="Lower Fork"> Lower Fork</label>
+                
+                </label>
+            
+            </fieldset>
+
+            <fieldset>
+                <legend>Questsions or Comments</legend>
+                <label class="top">
+                    <textarea class="top" name="comment" rows="12" cols="50"> </textarea></label>
+            </fieldset>
+
+            <input type="submit" value="Submit Your Reservation" class="submitBtn">
+        </form>
+
+        <footer>
+            <section class="contact">
+                <div class="link">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="activities.html">Adventures</a></li>
+                        <li><a href="guides.html">Our Guides</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                    </ul>
+                </div>
+
+                <div class="info">
+                    <h3>Salmon River Adventures</h3>
+                    <p>1000 S Main St. Riggins, ID</p>
+                    <p>&#9742; 999.999.9999</p>
+                    <p>&#9993; info@salmonadventures.com</p>
+                </div>
+
+                <div class="social">
+                    <img src="images/facebook.png" alt="Facebook">
+                    <img src="images/instagram.png" alt="Instagram">
+                    </br>
+                    <img src="images/twitter.png" alt="Twitter">
+                    <img src="images/youtube.png" alt="YouTube">
+                </div>
+            </section>
+
+
+            <p>&copy;Salmon River Adventures | Shari Lucas | <span id="date"></span>
+        </footer>
+
+        <script src="js/scripts.js"></script>
+        <script src="js/currentdate.js"></script>
+
+
+</body>
+
+</html>

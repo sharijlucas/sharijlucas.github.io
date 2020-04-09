@@ -1,0 +1,32 @@
+{
+    "guides": [
+      {
+        "name": "Joe",
+        "lastname": "Jones",
+        "certification": "Class III",
+        "years": "10",
+        "email": "joe@adventures.com",
+        "bio": "Joe is a Wisconsin native. He has been a river guide for over 10 years and has guided rivers in Colorado, West Virginia, Wisconsin, Arizona, Oregon, California, Idaho, Costa Rica, Colombia, and Guatemala. When not on the river, Joe can be found guiding backcountry snowboarding trips, climbing, biking, surfing, sailing, and hiking. He was the manager of his last company in Colorado.",
+        "imageurl": "images/guide-Joe.jpg"
+      },
+      {
+        "name": "Alex",
+        "lastname": "Alexander",
+        "certification": "Class III",
+        "years": "15",
+        "email": "alex@adventures.com",
+        "bio": "Alex has been a guide for over 15 years. As a boy growing up in the Rogue Valley, Alex developed a love of nature due to outings with his father and grandfather scuba diving, fishing, camping, hiking and inner tubing on the Rogue River.  His entire life changed when he attended his first river guide training. He trained and worked with a raft company for 9 years before coming to here.",
+        "imageurl": "images/guide-Alex.jpg"
+      },
+      {
+        "name": "Tom",
+        "lastname": "Thomas",
+        "certification": "Class III",
+        "years": "20",
+        "email": "tom@adventures.com",
+        "bio": "Tom has resigned himself to the simple life of a river guide. His addiction to guiding began in 1991, but his real love of rivers began when family friends invited him on his first trip when he was eleven. His 20+ years as a professional guide has taken him throughout the western United States as well as Nepal and Chile. Tom grew up in the Sierra Nevada foothills.",
+        "imageurl": "images/guide-Tom.jpg"
+      }
+     
+    ]
+  }

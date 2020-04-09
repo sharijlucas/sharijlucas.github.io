@@ -9,17 +9,17 @@ fetch(apiURL)
     const humidity = document.querySelector('#humidity');
     const current = document.querySelector('#current')
     const windSpeed = document.querySelector('#windSpeed')
-    const weatherIcon = document.querySelector('#imagesrc');
+    //const weatherIcon = document.querySelector('#imagesrc');
 
     currentTemp.textContent = jsObject.weather[0].main;
     temp.textContent = jsObject.main.temp + "°F"; 
     humidity.textContent = jsObject.main.humidity + "%";
     windSpeed.textContent = jsObject.wind.speed + " mph";
 
-   const imagesrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`; // note the concatenation
+   /* const imagesrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`; // note the concatenation
     const desc = jsObject.weather[0].description; // note how we reference the weather array
     document.getElementById('imagesrc').textContent = imagesrc; // informational specification only
     document.getElementById('icon').setAttribute('src', imagesrc); // focus on the setAttribute() method
-    document.getElementById('icon').setAttribute('alt', desc);  
+    document.getElementById('icon').setAttribute('alt', desc);  */
   });
 
