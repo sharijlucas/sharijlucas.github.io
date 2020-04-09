@@ -31,7 +31,6 @@
 
 main {
 	max-width: 800px;
-	padding: 3rem;
   }
 /************************ home page **********************/
 	.stats {
@@ -41,7 +40,7 @@ main {
 	}
 
 /************************ guide page **********************/
-main div {
+.cards {
 	grid-template-columns: 1fr 1fr;
 }
 

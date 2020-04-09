@@ -94,15 +94,12 @@ footer {
 /************************ main **********************/
 
 main {
-    padding: 2rem;
+    padding: 1rem;
     background-color: #FDFCF7;
     font-family: 'Montserrat', sans-serif;
     max-width: 500px;
 }
 
-p {
-    margin: 1rem;
-}
 
 /************************ home page **********************/
 
@@ -146,7 +143,7 @@ h2 {
 .trips {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1rem;
+    grid-gap: .5rem;
     text-align: center;
 }
 
@@ -159,8 +156,7 @@ h2 {
 
 
 .trips img {
-    border: 10px solid #A65133;
-
+    border: 1px solid #A65133;
 }
 
 /************************ giude page **********************/
